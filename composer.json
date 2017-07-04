@@ -1,0 +1,24 @@
+{
+	"name" : "windwork/app-pro",
+	"description" : "Windwork, easy,quick,performance oop mvc web framework",
+	"version" : "1.0.0-alpha",
+	"require" : {
+		"php" : ">=5.5.0",
+		"ext-gd" : "*",
+		"ext-pdo_mysql" : "*",
+		"ext-mbstring" : "*",
+		"windwork/wf" : "*"
+	},
+	"license" : "MIT",
+	"autoload" : {
+		"psr-4" : {
+			"" : ""
+		}
+	},
+	"repositories" : [{
+			"type" : "composer",
+			"url" : "https://packagist.phpcomposer.com"
+		}
+	],
+	"type" : "project"
+}

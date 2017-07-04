@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>{{$pageTitle}}</title>
+<style>
+html, body { margin: 0; padding: 0; font-size: 14px; }
+.container { margin: 30px 50px; }
+.container h1 { line-height: 24px; margin: 0; padding: 20px 0; }
+.container h1 span { font-size: 32px; color:#07a8f2; }
+.container h1 em, .container h1 i { font-style:normal; font-weight:normal; font-size: 16px; color:#fe9003; }
+.container h1 i { font-size: 14px; color:#aaa; }
+.container .slogan { color:#333; }
+.container .ft { padding: 20px 0; font-size: 13px; }
+.container .ft a { color:#0366d6; text-decoration: none; display: inline-block; margin-left: 8px; }
+.copyright { color:#666; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+          <span>Windwork</span>
+          <em>V {{\wf\core\Version::VERSION}}</em>
+          <i>Released under the MIT License</i>
+        </h1>
+        <div class="slogan">{{$slogan}}</div>
+        <div class="ft">
+          <span class="copyright">@{{date('Y')}} Windwork Team. </span>
+          <a href="http://docs.windwork.org/guide/" target="_blank"><span>快速入门</span></a>
+          <a href="http://docs.windwork.org/manual/" target="_blank"><span>开发文档</span></a>
+          <a href="https://github.com/windwork/windwork"><span>GitHub</span></a>
+        </div>
+    </div>
+    
+</body>
+</html>
