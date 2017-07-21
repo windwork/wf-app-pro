@@ -18,11 +18,17 @@
  * 入口常量，声明该常量后才是有效的程序入口
  * @var bool
  */
-define('IS_IN', true);
-
+define('WF_IN', true);
 
 // 是否开启调试模式，正式环境设为 false
 define('WF_DEBUG', true);
+
+// 应用运行环境名，根据该参数加载配置文件
+// dev）开发（默认）
+// test）测试； 
+// product）正式上线；
+// 其他）其他正式上线应用
+//define('WF_ENV', 'product');
 
 // 程序源码文件夹完整路径
 define('ROOT_DIR', dirname(__DIR__));
@@ -30,5 +36,5 @@ define('ROOT_DIR', dirname(__DIR__));
 // 加载 composer autoload
 require_once '../vendor/autoload.php';
 
-$app = \wf\web\Application::app('../config/', 'develop');
+$app = \wf\app\web\Application::app();
 $app->run();

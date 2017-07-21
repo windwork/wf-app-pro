@@ -1,13 +1,13 @@
 {
 	"name" : "windwork/app-pro",
 	"description" : "Windwork, easy,quick,performance oop mvc web framework",
-	"version" : "1.0.0-alpha",
+	"version" : "0.1.0",
 	"require" : {
 		"php" : ">=5.5.0",
 		"ext-gd" : "*",
 		"ext-pdo_mysql" : "*",
 		"ext-mbstring" : "*",
-		"windwork/wf" : "*"
+		"windwork/app" : "*"
 	},
 	"license" : "MIT",
 	"autoload" : {
