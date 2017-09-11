@@ -46,7 +46,7 @@ return [
     'srv' => [
         // 模板组件设置
         'template' => [
-            'class'              => '\\wf\\template\\strategy\\Wind',
+            'class'              => '\\wf\\template\\adapter\\Wind',
             'compileForce'       => 1,                  // 强制编译模板开关
             'compileMerge'       => 1,                  // 将编模板合并成一个文件
             'compileCheck'       => 1,                  // 检查编译模板开关
@@ -60,7 +60,7 @@ return [
         
         // 缓存组件设置
         'cache' => [
-            'class'            => '\\wf\\cache\\strategy\\File',              // 缓存模式，File|Memcache|Memcached|Redis
+            'class'            => '\\wf\\cache\\adapter\\File',              // 缓存模式，File|Memcache|Memcached|Redis
             'enabled'          => 1,                   // 是否启用缓存
             'dir'              => dirname(__DIR__) . '/data/cache',        // 缓存文件夹
             'expire'           => 7200,                // 缓存更新周期(默认：7200s)
@@ -95,7 +95,7 @@ return [
         // 附件组件设置
         'storage' => [
             // 附件处理类
-            'class'           => '\\wf\\storage\\strategy\\File',
+            'class'           => '\\wf\\storage\\adapter\\File',
             
             // 附件存贮文件夹，相对于站点根目录
             'dir'             => 'storage',
@@ -116,7 +116,7 @@ return [
         
         // 日志组件设置
         'logger' => [
-            'class'           => '\\wf\\logger\\strategy\\File',
+            'class'           => '\\wf\\logger\\adapter\\File',
             'dir'             => dirname(__DIR__) . '/data/log',          //
             
             // 日志级别，可设置为0-7，记录小于或等于该级别的日志
@@ -133,17 +133,17 @@ return [
         
         // 加密解密组件设置
         'crypt' => [
-            'class'          => '\\wf\\crypt\\strategy\\AzDG',
+            'class'          => '\\wf\\crypt\\adapter\\AzDG',
         ],
         
         // 验证码组件设置
         'captcha' => [
-            'class'         => '\\wf\\captcha\\strategy\\GDSimple',
+            'class'         => '\\wf\\captcha\\adapter\\GDSimple',
         ],
         
         // 邮件发送组件设置
         'mailer' => [
-            'class'         => '\\wf\\mailer\\strategy\\SMTP',
+            'class'         => '\\wf\\mailer\\adapter\\SMTP',
             'port'          => 25,
             'host'          => 'smtp.163.com',
             'auth'          => true,

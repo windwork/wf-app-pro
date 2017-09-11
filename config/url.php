@@ -3,7 +3,7 @@
  * 链接相关设置
  */
 return [
-    'class'            => '\\wf\\route\\strategy\\Simple',
+    'class'            => '\\wf\\route\\adapter\\Simple',
     'useModule'        => 0,       // 是否启用模块
     
     // 默认请求响应action
